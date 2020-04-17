@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as S from './styles'
+import * as S from '../styles'
 
 import {
     Facebook,
@@ -43,7 +43,7 @@ const Links = ({ theme, links }) => {
 
     return (
         <S.GridThemeWrapper>
-            {links.map((link, index) => (
+            {links && links.map((link, index) => (
                 <a href={link.href} target="_blanck" key={index}>
                     <S.LinkItem
                         size={52}
